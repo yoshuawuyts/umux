@@ -1,9 +1,9 @@
-# umux
-Nano multiplexer
+# µmux
+Micro multiplexer
 
 ## Usage
 ```txt
-umux - nano multiplexer
+umux - micro multiplexer
 
 Options:
   -h, --help        Output usage information

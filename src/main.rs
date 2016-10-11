@@ -5,9 +5,11 @@
 #[macro_use]
 extern crate error_chain;
 extern crate ncurses as nc;
+extern crate regex;
 
 mod errors;
 
+use regex::Regex;
 use errors::*;
 use std::env;
 
@@ -35,11 +37,14 @@ fn main () {
 // render the header bar
 fn header (max_x: i32, max_y: i32) {
   let path = env::current_dir().unwrap();
+  let matcher = Regex::new(r"/.*$").unwrap();
   let left = path.to_str().unwrap();
+  nc::printw(" ");
   nc::printw(left);
 
-  let right = "[ 1 ] 2 3 4 5 6";
+  let right = "[ 1 ]";
   let rl = right.len() as i32;
-  nc::mv(0, max_x - rl);
+  nc::mv(0, max_x - rl - 1);
   nc::printw(right);
+  nc::printw(" ");
 }
