@@ -1,5 +1,7 @@
 [package]
 authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+description = "Nano multiplexer"
+license = "MIT"
 name = "umux"
 version = "1.0.0"
 

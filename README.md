@@ -2,7 +2,7 @@
 Nano multiplexer
 
 ## Usage
-```sh
+```txt
 umux - nano multiplexer
 
 Options:
@@ -10,7 +10,7 @@ Options:
   -v, --version     Output version number
 
 Commands:
-  (default)         create a local multiplexer
+  (default)         Multiplex a local session
 ```
 
 ## Installation
